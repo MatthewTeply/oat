@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "oat",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Orcs And Travellers",
+  "description": "This mod aims to bring some fantasy life to Minecraft.",
   "authors": [
-    "Turnip Labs"
+    "Conan The Civilian"
   ],
   "contact": {
     "homepage": "",
@@ -19,25 +19,26 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"conanthecivilian.oat.Oat"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"conanthecivilian.oat.Oat"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"conanthecivilian.oat.Oat"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"conanthecivilian.oat.Oat"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+		"oat.mixins.json"
   ],
 
   "depends": {
-		"minecraft": "~7.1",
-    "fabricloader": ">=0.15.5"
+		"minecraft": "~7.2.1",
+    "fabricloader": ">=0.15.5",
+		"dragonfly": ">=0.4.0"
   },
   "suggests": {
   }
